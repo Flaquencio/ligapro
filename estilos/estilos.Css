@@ -44,8 +44,6 @@
 .inag{
     display: flex;
     justify-content: center;
-    width= "800px";
-    height= "1000px";
     border-radius: 15%;
 }
 
