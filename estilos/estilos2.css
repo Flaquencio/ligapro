@@ -1,0 +1,139 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/*para que este adopte una forma en dispositivos pequeños*/
+
+@media screen and(max-width:400px){
+    html{
+        font-size: 8px;
+    }
+}
+
+body{
+    /*no entiendo porque no me deja usar el directorio que tengo dentro de img*/
+    background-image: url('https://i.pinimg.com/1200x/f5/ee/21/f5ee21f689659bf1ab113de174820170.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+/*links*/
+a:hover, a:focus, a:active{
+    color: black;
+}
+
+a:hover, a:active{
+    outline: 0;
+}
+
+
+/*texto*/
+h3{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: yellow;
+}
+
+p{
+    text-align: center;
+    color: yellow;
+}
+
+h1, h2, h3, h4 ,p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:600px){
+    h1, h2, h3, h4, p{
+        margin-top: 6rem;
+    }
+}
+
+/*poner el logo en el centro*/
+.logo {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.logo img:hover {
+    /*interaccion con el cursor al momento de pasar sobre la imagen*/
+    transform: scale(1.05);
+}
+
+/*estilo para contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: #7f8bcf;
+    padding: 10px 0;
+    border: solid;
+}
+
+.contenedor a {
+    color: rgb(52, 11, 11);
+    text-decoration: none;
+    /*arriba abajo/ derecha izquierda*/
+    margin: 0 10px;
+    /*para separar los hipervinculos*/
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/*Es para los enlaces o atajos que se encuentran dentro del hover*/
+.contenedor a:hover {
+    background-color: #2a73cd;
+}
+
+.serie{
+    text-align: center;
+}
+
+/*Estilo para las tablas*/
+.tablas {
+    display: flex;
+    /*para que use el espacio a la ancho*/
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid;
+}
+
+th {
+    background-color: #4f79c7;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border: black;
+}
+
+.tablas tr:hover {
+    /*para que este cree una fila al momento de pasar sobre los equipos*/
+    background-color: #6b7c8e; 
+}
+
+/*Ajustes en el calendario*/
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+.inag img {
+    max-width: 100%; 
+    height: auto; 
+    border: 5px solid black; 
+}
